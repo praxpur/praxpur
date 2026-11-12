@@ -95,7 +95,7 @@
 - **[PV-Cpp](https://github.com/praxpur/PV-Cpp)**：C++ 基础语法、类与对象、继承、多态、模板和文件读写练习
 
 #### 9. 开源贡献 🌍
-- 🐞 协助 [Readest](https://github.com/readest/readest) 进行问题反馈与功能建议
+- 🐞 协助 [Readest](https://github.com/readest/readest) 进行问题反馈与功能建议，PR Notion笔记同步功能。
 - 📖 参与 [Calibre-Web-Automated](https://github.com/crocodilestick/Calibre-Web-Automated) 中文翻译
 
 ---
