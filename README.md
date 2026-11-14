@@ -58,45 +58,57 @@
 ### 🚀 Project Experience
 
 #### 1. [青松坐姿 PinEase](https://github.com/praxpur/PinEase) 🪑
-- 🦴 面向青少年坐姿健康场景的浏览器端姿态识别原型
-- 🤖 调用摄像头与 MediaPipe Pose Landmarker，实时识别并绘制人体关键点
-- 💻 使用 Vue 3、Vite 和 MediaPipe Tasks Vision 开发
+- 🦴 基于 MediaPipe 的坐姿与用眼健康助手，支持浏览器运行和 Tauri v2 Windows 桌面端
+- 🤖 在 Web Worker 中进行本地视觉推理，结合正面 / 侧面个体校准、平滑与持续时间判定提供姿态提醒
+- 📊 集成番茄钟、久坐与护眼提醒、历史趋势和数据导出，使用 Vue 3、TypeScript、ECharts 与 IndexedDB
 
-#### 2. [Treehouse-Course](https://github.com/praxpur/Treehouse-Course) 🌳
-- 🎓 使用 Python、Tk/ttk 与 Playwright 开发的桌面课程助手
-- 🎬 支持课程与视频选择、播放队列、倍速控制和登录状态复用
-- 🔐 登录由用户在浏览器中手动完成，登录状态保存在本地
+#### 2. [分刷酱 ACE](https://github.com/praxpur/Ace) 🎓
+- 🖥️ 将超星学习通与智慧树课程任务整合到统一桌面窗口，分别管理两个平台的账号、配置与运行状态
+- 🎬 支持课程目录、视频勾选、播放队列、运行进度与日志，提供明暗主题、跟随系统和 Windows 托盘常驻
+- 💻 使用 Python、Vue 3、TypeScript、Element Plus、PyWebView 与 Playwright，整合 chaoxing-gui 和 Treehouse-Course 的运行逻辑并保留上游许可
 
-#### 3. [MediaPipe-CN](https://github.com/praxpur/MediaPipe-CN) 📖
-- 🌐 Google AI Edge MediaPipe 官方文档的简体中文镜像
-- 🖼️ 将文档整理为 Markdown 并保存图片，支持离线阅读
-- 📜 文档遵循 CC BY 4.0，代码示例遵循 Apache 2.0
+#### 3. [辅导员线下培训活动系统](https://github.com/praxpur/CounselorTrainingPlatform) 🏫
+- 📋 基于微信原生小程序、Node.js 与 SQLite 开发，支持活动发布、报名、参加确认、培训经历审核与人员管理
+- 📊 实现年度学时统计、排名和 Excel 导出，通过数据库事务与唯一约束防止超额和重复报名
+- 🛠️ 当前为开发版，已提供系统测试与并发负载测试脚本，正式身份认证和部署仍待完善
 
-#### 4. [chaoxing-gui](https://github.com/praxpur/chaoxing-gui) 🤖
-- 📚 超星学习通任务点自动化工具的图形桌面客户端
-- 🐍 基于 Python 开发，提供参数配置、登录和运行进度界面
+#### 4. [济大在线评分系统](https://github.com/praxpur/PV-ujn-score) 🏆
+- 🌐 使用 Django、MySQL、Vue 3 与 TypeScript 构建在线评分系统，支持管理员配置和评委专属评分入口
+- 📥 支持 Excel 选手导入、评委批量创建、专属二维码生成与批量导出
+- 📈 提供可配置评分范围、重复打分与极值剔除规则，支持成绩统计、报表导出和 Docker 部署
 
-#### 5. [MD3 风格个人博客 M3Blog](https://github.com/praxpur/M3Blog) 📝
-- 🎨 基于 Material Design 3 的个人博客，支持文章、搜索、评论、点赞和留言
-- 🌐 使用 Vue 3、Vite、Node.js 和 Express 构建
+#### 5. [MediaPipe-CN](https://github.com/praxpur/MediaPipe-CN) 📖
+- 🌐 整理 Google AI Edge MediaPipe 文档的简体中文镜像，覆盖 Solutions 与 Framework 的学习资料
+- 🖼️ 提供 Markdown 文档、本地图片和导航阅读页面，支持在线浏览与离线阅读
+- 🐍 编写页面抓取与转换脚本，保留原文链接、更新时间及内容许可，便于对照与维护
 
-#### 6. [Koi2Notion](https://github.com/praxpur/koi2notion) 📓
-- 📖 将 Kindle 剪贴板中的高亮与笔记同步到 Notion 数据库
-- 🐍 基于 Python，支持增量同步、重复识别和笔记关联
+#### 6. 个人博客与模板 📝
+- **[PraxBlog](https://github.com/praxpur/PraxBlog)**：基于 Vue 3、TypeScript、Vite 和 Tailwind CSS v4 的 Material Design 3 博客模板，通过站点配置适配个人内容
+- **[M3Blog](https://github.com/praxpur/M3Blog)**：使用 Vue 3、Material Web、Node.js 与 Express 构建，支持 Markdown 文章、搜索、评论、点赞、留言和明暗主题
 
-#### 7. [AutoColor](https://github.com/praxpur/AutoColor) 🎨
-- 🖼️ Windows 11 托盘工具，按自定义时间或本地日出日落自动切换系统与应用主题
-- 💻 使用 C# 和 WinForms 开发，日出日落计算无需联网
+#### 7. [Koi2Notion](https://github.com/praxpur/koi2notion) 📓
+- 📖 使用 Python 将 Kindle 剪贴板中的高亮与笔记同步到 Notion 数据库，支持中文剪贴板解析和作者信息同步
+- 🔄 通过文件签名、标题匹配和已有条目去重实现增量同步，按页码 / 位置范围关联笔记与高亮
+- 🐍 提供文件监听模式与基于 requests 的 Notion 客户端，处理限流和服务异常重试
 
-#### 8. 校内项目与编程练习 🏫
-- **[DormKeeper](https://github.com/praxpur/DormKeeper)**：整理本人有权访问的宿舍考勤抓拍，支持按年月归档、增量下载和视频合成
-- **[济大繁星评选打分系统](https://github.com/praxpur/PV-xgzx-stars-score)**：参与 Vue 3 前端开发，并独立完成测试系统的前后端开发
-- **[停车场管理系统](https://github.com/praxpur/PV-Park)**：使用 C 语言和链表实现车辆管理、计费、查询与数据统计
-- **[PV-Cpp](https://github.com/praxpur/PV-Cpp)**：C++ 基础语法、类与对象、继承、多态、模板和文件读写练习
+#### 8. [午后工时 AfternoonHours](https://github.com/praxpur/AfternoonHours) ⏱️
+- 📱 基于 Kotlin、Material Design 3 与 Room 的离线 Android 工时记录应用
+- 🔍 使用 ML Kit 中文 OCR 解析钉钉打卡截图，按可配置起算时间计算计薪分钟数与工资估算
+- 📅 支持导入确认、同日记录更新、手动编辑、月度汇总和 CSV 导出
 
-#### 9. 开源贡献 🌍
-- 🐞 协助 [Readest](https://github.com/readest/readest) 进行问题反馈与功能建议，PR Notion笔记同步功能。
-- 📖 参与 [Calibre-Web-Automated](https://github.com/crocodilestick/Calibre-Web-Automated) 中文翻译
+#### 9. [AutoColor](https://github.com/praxpur/AutoColor) 🎨
+- 🖼️ 基于 C# 与 WinForms 的 Windows 11 托盘工具，按自定义时间或本地日出日落切换系统与应用主题
+- 🌅 使用离线太阳位置计算与一次性计时器安排下一次切换，支持当前用户开机自启动
+
+#### 10. 其他工具与编程练习 🧰
+- **[DormKeeper](https://github.com/praxpur/DormKeeper)**：使用 Python 归档本人有权访问的宿舍考勤抓拍，支持图形界面、按年月整理、增量下载与视频合成
+- **[停车场管理系统](https://github.com/praxpur/PV-Park)**：使用 C 语言、链表与文件读写实现停车登记、计费、查询和营业统计
+- **[PV-Cpp](https://github.com/praxpur/PV-Cpp)**：整理 C++ 类与对象、继承、多态、模板、运算符重载和文件读写练习
+
+#### 11. 开源贡献 🌍
+- 🔄 为 [Readest 提交 Notion 笔记同步功能 PR](https://github.com/readest/readest/pull/5949)，支持高亮与笔记的自动 / 手动同步、增量更新和去重重试
+- 🐞 为 [Readest](https://github.com/readest/readest/issues?q=is%3Aissue%20author%3Apraxpur) 提交问题反馈与交互改进建议，涉及 Windows、Android 和 Linux 使用体验
+- 📖 为 [Calibre-Web-Automated](https://github.com/crocodilestick/Calibre-Web-Automated/pull/1151) 提交中文翻译改进，完善提示信息与界面文案
 
 ---
 
