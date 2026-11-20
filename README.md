@@ -1,4 +1,4 @@
-<h1 align="center">A CS Student from University of Jinan</h1>
+<h1 align="center">A CS Student</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/University-University%20of%20Jinan-blue?style=for-the-badge&logo=academia" alt="University">
